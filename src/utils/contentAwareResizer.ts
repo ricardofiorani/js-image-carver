@@ -315,7 +315,7 @@ type ResizeImageArgs = {
   onIteration?: (args: OnIterationArgs) => Promise<void>,
 };
 
-const resizeImageWidth = async (args: ResizeAxisArgs): Promise<void> => {
+export const resizeImageWidth = async (args: ResizeAxisArgs): Promise<void> => {
   const { img, toSize, onIteration, size } = args;
 
   const pxToRemove = img.width - toSize;
